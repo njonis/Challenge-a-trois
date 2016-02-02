@@ -1,0 +1,60 @@
+body {
+  font-family: "Lato";
+  background-color: #e7e7e7;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.produit img {
+  height: 20em;
+}
+
+.produit {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.produit .seemore {
+  background-color: #3074AE;
+  border: 1px solid #3074AE;
+  padding: 1em 2em;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.produit p {
+  font-size: 1.5em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.prodtotal {
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.descriptionsite {
+  margin-top: 2em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.logDesBord {
+  border-bottom: 1px solid #ccc;
+}
+
+.formulHome {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 2em;
+}
