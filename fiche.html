@@ -14,6 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>
+    <script src="JS/panier.js"></script>
+
 </head>
   <body onload="lireParametre()">
     <nav id="ma_nav" class="navbar navbar-inverse">
@@ -47,11 +49,12 @@
               <div style="width:1px;height:0px;overflow:hidden;">
                 <iframe id="id_iframe" name="id_iframe" src=""></iframe>
               </div>
+              <span id="catId"></span>
               <span id="prenom" class="nom"></span>
               <span id ="catrace" class="race"></span>
               <section id="catnote" class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
               <p id="descript" class="descriptfiche descriptif"></p>
-              <span id="catprice" class="prix"></span><span id="euroscat"></span><span class="panfiche pull-right"><a href="#"><i class="fa fa-shopping-cart"></i></a></span><span class="pull-right"><input type="number" min="0" max="3"></input></span>
+              <span id="catprice" class="prix"></span><span id="euroscat"></span><span class="panfiche pull-right" onclick="ajouterAuPanier()"><a href="#"><i class="fa fa-shopping-cart"></i></a></span><span class="pull-right"><input id="inputNumber" type="number" min="0" max="3"></input></span>
               <div class="modaltest text-center">
               <!-- Bouton execution modal -->
               <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">

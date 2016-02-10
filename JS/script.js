@@ -112,6 +112,7 @@ var cat10 = {
 var Stock = [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10];
 
 function lireParametre() {
+  var elementId = document.getElementById("catId");
   var elementNom = document.getElementById("prenom");
   var elementRace = document.getElementById("catrace");
   var elementDescribe = document.getElementById("descript");
@@ -120,6 +121,7 @@ function lireParametre() {
   var elementEuros = document.getElementById("euroscat");
   var indiceCat = urlParams.paramIndice;
   var cat = Stock[indiceCat];
+  elementId.innerHTML= indiceCat;
   elementNom.innerHTML = cat.nom;
   elementRace.innerHTML = cat.race;
   elementDescribe.innerHTML = cat.description;
