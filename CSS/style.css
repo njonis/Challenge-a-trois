@@ -6,6 +6,7 @@ body {
 h1 {
   text-align: center;
   font-size: 3em;
+  margin-bottom: 1em;
 }
 
 .produit img {
@@ -62,6 +63,83 @@ h1 {
 #ma_nav{
     border-radius: 0;
 }
+
+.listeTri li {
+  list-style-type: none;
+}
+
+.listeTri input {
+  margin-right: 1em;
+}
+
+.catToSell p {
+  text-align: center;
+}
+
+.image {
+  max-height: 17.2em;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.imagetop {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.margin0 {
+  margin-top: 15px;
+}
+
+.panfiche a i {
+  font-size: 2em;
+}
+
+.imagefiche {
+  max-height: 20em;
+  margin-bottom: 2em;
+}
+
+.imgdenis {
+  margin-top: 2.9em;
+}
+
+.modaltest {
+  margin-top: 2em;
+}
+
+.margcom {
+  margin-bottom: 3.7em;
+}
+
+.margc {
+  margin-top: 2em;
+}
+
+.margb {
+  margin-top: 6em;
+}
+
+.marga {
+  margin-top: 14em;
+}
+
+.descriptfiche {
+  margin-top: 2em;
+}
+
+.catToSell img {
+  margin-bottom: 2em;
+}
+
+.catToSell p {
+  margin-top: 2em;
+}
+
+.catToSell {
+  margin-bottom: 2em;
+}
+
 footer{
     background-color: #222222;
     color: #9d9d9d;

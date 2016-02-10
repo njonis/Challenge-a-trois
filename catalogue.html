@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,128 +9,164 @@
     <link href="CSS/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
     <link href="CSS/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="JS/script.js"></script>
 </head>
 
 <body>
+  <nav id="ma_nav" class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <img height="50px" width="50px" src="http://img11.hostingpics.net/thumbs/mini_143462chat.png" alt="logo" />
+              <a class="navbar-brand" href="index.html">King cat's
+              </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Homepage</a></li>
+                  <li><a href="catalogue.html">Catalogue</a></li>
+                  <li><a href="#">Mon Panier <i class="fa fa-shopping-cart"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
+              <div class="listeTri">
                 <article>
-                <p> Race</p>
+                <p>Race</p>
                 <ul>
-                    <li>Gouttiere</li>
-                    <li>Siamois</li>
-                    <li>Angora</li>
-                    <li>A poil court</li>
+                    <li><input type="checkbox" value="valeur" />Gouttiere</li>
+                    <li><input type="checkbox" value="valeur" />Siamois</li>
+                    <li><input type="checkbox" value="valeur" />Angora</li>
+                    <li><input type="checkbox" value="valeur" />A poil court</li>
                 </ul>
                 </article>
                 <article>
                     <p> Prix</p>
                     <ul>
-                        <li>0 à 5 euros</li>
-                        <li>6 à 100 euros</li>
-                        <li>101 à 1500 euros</li>
-                        <li>plus de 1500 euros</li>
+                        <li><input type="checkbox" value="valeur" />0 à 5 euros</li>
+                        <li><input type="checkbox" value="valeur" />6 à 100 euros</li>
+                        <li><input type="checkbox" value="valeur" />101 à 1500 euros</li>
+                        <li><input type="checkbox" value="valeur" />plus de 1500 euros</li>
                     </ul>
                 </article>
                 <article>
-                    <p> Note</p>
+                    <p>Note</p>
                     <ul>
-                        <li><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i>
-                        <i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></li>
-                        <li><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></li>
-                        <li><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></li>
-                        <li><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></li>
-                        <li><i class="fa fa-heart-o"></i></li>
+                        <li><input type="checkbox" value="valeur" /><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i></li>
+                        <li><input type="checkbox" value="valeur" /><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i></li>
+                        <li><input type="checkbox" value="valeur" /><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i></li>
+                        <li><input type="checkbox" value="valeur" /><i class="fa fa-heart"></i><i class="fa fa-heart"></i></li>
+                        <li><input type="checkbox" value="valeur" /><i class="fa fa-heart"></i></li>
                     </ul>
                 </article>
 
             </div>
+          </div>
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-5 col-md-offset-1">
-                        <article>
-                            <img class="image img-responsive" src="http://www.kazeo.com/sites/fr/photos/243/le-bengal-une-histoire-revoltante-pour-les-zoo_2430240-L.jpg">
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=0"><img class="image img-responsive" src="http://www.kazeo.com/sites/fr/photos/243/le-bengal-une-histoire-revoltante-pour-les-zoo_2430240-L.jpg"></a>
                             <span class="nom">Fido</span>
-                            <span class="race">Gouttiere</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
+                            <span class="race">Bengale</span>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                            <span class="prix">15 euros</span>
+                            <span class="prix">15.99€</span>
                         </article>
-                        <article>
-                            <img class="image img-responsive" src="http://media.paperblog.fr/i/439/4398606/photos-chats-moches-L-LUBwqq.jpeg">
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=1"><img class="image img-responsive" src="http://media.paperblog.fr/i/439/4398606/photos-chats-moches-L-LUBwqq.jpeg"></a>
                             <span class="nom">Minou</span>
-                            <span class="race">Angora</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i></section>
-                            <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">125 euros</span>
-                        </article>
-                        <article>
-                            <img class="image img-responsive" src="http://static.wamiz.fr/images/animaux/chats/large/maine-coon.jpg">
-                            <span class="nom">Lucie</span>
                             <span class="race">Siamois</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">1200 euros</span>
+                            <span class="prix">129.99€</span>
                         </article>
-                        <article>
-                            <img class="image img-responsive" src="https://i.ytimg.com/vi/iksiNh21fP8/hqdefault.jpg">
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=2"><img class="image img-responsive" src="http://static.wamiz.fr/images/animaux/chats/large/maine-coon.jpg"></a>
+                            <span class="nom">Lucie</span>
+                            <span class="race">Gouttiere</span>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
+                            <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                            <span class="prix">1199€</span>
+                        </article>
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=3"><img class="image img-responsive" src="https://i.ytimg.com/vi/iksiNh21fP8/hqdefault.jpg"></a>
                             <span class="nom">Damien</span>
-                            <span class="race">A poil court</span>
-                            <section class="popularite"><i class="fa fa-heart"></i<i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i>section>
+                            <span class="race">à poil court</span>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i<i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">2 euros</span>
+                            <span class="prix">1.99€</span>
                         </article>
-                        <article>
-                            <img class="image img-responsive" src="http://soocurious.com/fr/wp-content/uploads/2015/06/Chat-de-pallas-30.jpg?e07df8">
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=4"><img class="image img-responsive" src="http://soocurious.com/fr/wp-content/uploads/2015/06/Chat-de-pallas-30.jpg?e07df8"></a>
                             <span class="nom">Alban</span>
                             <span class="race">Angora</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">650 euros</span>
+                            <span class="prix">649€</span>
                         </article>
+
                     </div>
                     <div class="col-md-5 col-md-offset-1">
-                        <article>
-                            <img class="image img-responsive" src="http://img1.closermag.fr/var/closermag/storage/images/media/images-des-contenus/insolite/20150625-trop/ce-chat-est-devenu-la-star-du-web/4700459-1-fre-FR/Ce-chat-est-devenu-la-star-du-web_exact1024x768_l.png">
-                            <span class="nom">Fido</span>
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=5"><img class="imgHeight image img-responsive" src="http://img1.closermag.fr/var/closermag/storage/images/media/images-des-contenus/insolite/20150625-trop/ce-chat-est-devenu-la-star-du-web/4700459-1-fre-FR/Ce-chat-est-devenu-la-star-du-web_exact1024x768_l.png"></a>
+                            <span class="nom">Jacks</span>
                             <span class="race">Gouttiere</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                            <span class="prix">15 euros</span>
+                            <span class="prix">14.99€</span>
                         </article>
-                        <article>
-                            <img class="image img-responsive" src="http://img.tel.pmdstatic.net/fit/http.3A.2F.2Fphoto.2Eprogramme-tv.2Enet.2Fupload.2Fslideshow.2Fles-chats-les-plus-mignons-d-internet-8242.2Fcapture-d-ecran-2014-10-24-a-15-31-41-140545.2Epng/1000x700/quality/65/on-commence-par-grumpy-cat-litteralement-chat-grincheux-le-chat-le-plus-connu-de-la-toile.jpg">
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=6"><img class="imgHeight image img-responsive" src="http://img.tel.pmdstatic.net/fit/http.3A.2F.2Fphoto.2Eprogramme-tv.2Enet.2Fupload.2Fslideshow.2Fles-chats-les-plus-mignons-d-internet-8242.2Fcapture-d-ecran-2014-10-24-a-15-31-41-140545.2Epng/1000x700/quality/65/on-commence-par-grumpy-cat-litteralement-chat-grincheux-le-chat-le-plus-connu-de-la-toile.jpg"></a>
                             <span class="nom">Laetitia</span>
                             <span class="race">Gouttiere</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i></section>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">1100 euros</span>
+                            <span class="prix">1099€</span>
                         </article>
-                        <article>
-                            <img class="image img-responsive" src="http://static.wamiz.fr/images/animaux/chats/large/maine-coon.jpg">
-                            <span class="nom">Lucie</span>
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=7"><img class="image img-responsive" src="http://static.wamiz.fr/images/animals/large/kikinou-31294589398.jpg"></a>
+                            <span class="nom">Roger</span>
                             <span class="race">Siamois</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">1200 euros</span>
+                            <span class="prix">1199€</span>
                         </article>
-                        <article>
-                            <img class="image img-responsive" src="https://i.ytimg.com/vi/iksiNh21fP8/hqdefault.jpg">
-                            <span class="nom">Damien</span>
-                            <span class="race">A poil court</span>
-                            <section class="popularite"><i class="fa fa-heart"></i<i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i>section>
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=8"><img class="imgdenis image img-responsive" src="http://soocurious.com/fr/wp-content/uploads/2013/10/voici-lil-bub-le-chat-le-plus-mignon-du-web-qui-vous-fera-fondre-de-tendresseune.jpg"></a>
+                            <span class="nom">Denis</span>
+                            <span class="race">à poil court</span>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i<i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">2 euros</span>
+                            <span class="prix">1.99€</span>
                         </article>
-                        <article>
-                            <img class="image img-responsive" src="http://soocurious.com/fr/wp-content/uploads/2015/06/Chat-de-pallas-30.jpg?e07df8">
-                            <span class="nom">Alban</span>
+
+                        <article class="catToSell">
+                            <a href="fiche.html?paramIndice=9"><img class="image img-responsive" src="http://2.bp.blogspot.com/-CO7kYSSIDhg/VIobpCteuSI/AAAAAAAASJs/vQx-p_KXq-4/s1600/Photo-chats-trop-mignons-roux-7.jpg"></a>
+                            <span class="nom">Jean-Denis</span>
                             <span class="race">Angora</span>
-                            <section class="popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
+                            <section class="pull-right popularite"><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i><i class="fa fa-heart-o"></i></section>
                             <p class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            <span class="prix">650 euros</span>
+                            <span class="prix">649€</span>
                         </article>
+
                     </div>
                     </div>
                 </div>
@@ -143,10 +180,13 @@
 
     </div>
 
-
-
-
-
-
-
-</body>
+    <footer class="fond_noir text-center">
+        <p>
+            ©Untitled. All rights reserved. | Photos by Fotogrph | Design by TEMPLATED.
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
