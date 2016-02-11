@@ -1,4 +1,5 @@
 var panier = [];
+var prixTotalPanier = 0;
 
 
 function ajouterAuPanier(){
@@ -6,26 +7,38 @@ function ajouterAuPanier(){
         panier = JSON.parse(sessionStorage.sauvegardePanier);
     }
 
+    var catPrice = document.getElementById('catprice');
     var catId = document.getElementById('catId');
     var inputQuantite = document.getElementById("inputNumber");
     var inputQuantiteValue = inputQuantite.value;
 
     var panierItem = {
         id : catId.innerHTML,
-        quantite : inputQuantiteValue
+        quantite : inputQuantiteValue,
+        prix : catPrice.innerHTML
     };
 
     panier.push(panierItem);
     sessionStorage.setItem("sauvegardePanier",JSON.stringify(panier));
+    console.log(panierItem.prix);
 
 }
 
 function chargementPanier(){
     var listeObjet = JSON.parse(sessionStorage.sauvegardePanier);
     for (var objet = 0; objet < listeObjet.length; objet++) {
-        console.log(objet);
-
+        var reference = listeObjet[objet].id;
+        var quantite = listeObjet[objet].quantite;
+        var prix = listeObjet[objet].prix;
+        var prixTotal = listeObjet[objet].prix * listeObjet[objet].quantite;
+        prixTotalPanier += prixTotal;
+        console.log(reference);
+        console.log(quantite);
+        console.log(prix);
+        console.log(prixTotal);
+        console.log(prixTotalPanier);
     }
+
     // var celluleQuantite0 = document.getElementById('cellule_quantite0');
     // var celluleQuantite1 = document.getElementById('cellule_quantite1');
     // var celluleQuantite2 = document.getElementById('cellule_quantite2');
