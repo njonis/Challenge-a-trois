@@ -82,7 +82,7 @@ h1 {
 
 .image {
   max-height: 17.2em;
-  width: 100%;
+  width: 96%;
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -130,6 +130,12 @@ h1 {
 
 .descriptfiche {
   margin-top: 2em;
+}
+
+.imagefiche {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catToSell img {

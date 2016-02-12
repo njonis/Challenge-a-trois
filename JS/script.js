@@ -130,130 +130,64 @@ function lireParametre() {
   elementEuros.innerHTML = cat.euros;
 }
 
-function remplirCatalogue() {
-  var elementStDiv = document.getElementById("stcol");
-  var elementStDiv2 = document.getElementById("stcol2");
-  for (var i = 0; i < Stock.length/2; i++) {
-
+function creerUnArticle(elementStDiv, indiceChat) {
   var elementArticle = document.createElement("article");
   var elementLink = document.createElement("a");
   elementStDiv.appendChild(elementArticle);
   elementArticle.className="catToSell";
   elementArticle.appendChild(elementLink);
-  elementLink.href="fiche.html?paramIndice="+i;
+  elementLink.href="fiche.html?paramIndice="+indiceChat;
   elementImage = document.createElement("img");
-  elementImage.src=Stock[i].photo;
+  elementImage.src=Stock[indiceChat].photo;
   elementLink.appendChild(elementImage);
   elementImage.className="image img-responsive";
 
   var elementSpan = document.createElement("span");
   elementArticle.appendChild(elementSpan);
   elementSpan.className="nom";
-  elementSpan.innerHTML=Stock[i].nom;
+  elementSpan.innerHTML=Stock[indiceChat].nom;
 
   var elementSpan2 = document.createElement("span");
   elementArticle.appendChild(elementSpan2);
   elementSpan.className="race";
-  elementSpan2.innerHTML=Stock[i].race;
+  elementSpan2.innerHTML=Stock[indiceChat].race;
 
   var elementSection = document.createElement("section");
   elementArticle.appendChild(elementSection);
   elementSection.className="pull-right popularite";
-
-  var elementIco = document.createElement("i");
-  elementSection.appendChild(elementIco);
-  elementIco.className = "fa fa-heart";
-
-  var elementIco2 = document.createElement("i");
-  elementSection.appendChild(elementIco2);
-  elementIco2.className = "fa fa-heart";
-
-  var elementIco3 = document.createElement("i");
-  elementSection.appendChild(elementIco3);
-  elementIco3.className = "fa fa-heart";
-
-  var elementIco4 = document.createElement("i");
-  elementSection.appendChild(elementIco4);
-  elementIco4.className = "fa fa-heart-o";
-
-  var elementIco5 = document.createElement("i");
-  elementSection.appendChild(elementIco5);
-  elementIco5.className = "fa fa-heart-o";
+  elementSection.innerHTML = "<i class='fa fa-heart'></i>\
+              <i class='fa fa-heart'></i>\
+              <i class='fa fa-heart'></i>\
+              <i class='fa fa-heart-o'></i>\
+              <i class='fa fa-heart-o'></i>"
 
   var elementPara = document.createElement("p");
   elementArticle.appendChild(elementPara);
   elementPara.className = "descriptif";
-  elementPara.innerHTML=Stock[i].description;
+  elementPara.innerHTML=Stock[indiceChat].description;
 
   var elementSpan3 = document.createElement("span");
   elementArticle.appendChild(elementSpan3);
   elementSpan3.className = "prix";
-  elementSpan3.innerHTML=Stock[i].price;
+  elementSpan3.innerHTML=Stock[indiceChat].price;
 
   var elementSpan4 = document.createElement("span");
   elementArticle.appendChild(elementSpan4);
-  elementSpan4.innerHTML=Stock[i].euros;
+  elementSpan4.innerHTML=Stock[indiceChat].euros;
 }
 
-for (var i = Stock.length/2; i < Stock.length; i++) {
 
-var elementArticle = document.createElement("article");
-var elementLink = document.createElement("a");
-elementStDiv2.appendChild(elementArticle);
-elementArticle.className="catToSell";
-elementArticle.appendChild(elementLink);
-elementLink.href="fiche.html?paramIndice="+i;
-elementImage = document.createElement("img");
-elementImage.src=Stock[i].photo;
-elementLink.appendChild(elementImage);
-elementImage.className="image img-responsive";
+function remplirCatalogue() {
+  var elementCatalogue = document.getElementById("catalogue");
 
-var elementSpan = document.createElement("span");
-elementArticle.appendChild(elementSpan);
-elementSpan.className="nom";
-elementSpan.innerHTML=Stock[i].nom;
+  var elementStDiv = null;
 
-var elementSpan2 = document.createElement("span");
-elementArticle.appendChild(elementSpan2);
-elementSpan.className="race";
-elementSpan2.innerHTML=Stock[i].race;
-
-var elementSection = document.createElement("section");
-elementArticle.appendChild(elementSection);
-elementSection.className="pull-right popularite";
-
-var elementIco = document.createElement("i");
-elementSection.appendChild(elementIco);
-elementIco.className = "fa fa-heart";
-
-var elementIco2 = document.createElement("i");
-elementSection.appendChild(elementIco2);
-elementIco2.className = "fa fa-heart";
-
-var elementIco3 = document.createElement("i");
-elementSection.appendChild(elementIco3);
-elementIco3.className = "fa fa-heart";
-
-var elementIco4 = document.createElement("i");
-elementSection.appendChild(elementIco4);
-elementIco4.className = "fa fa-heart-o";
-
-var elementIco5 = document.createElement("i");
-elementSection.appendChild(elementIco5);
-elementIco5.className = "fa fa-heart-o";
-
-var elementPara = document.createElement("p");
-elementArticle.appendChild(elementPara);
-elementPara.className = "descriptif";
-elementPara.innerHTML=Stock[i].description;
-
-var elementSpan3 = document.createElement("span");
-elementArticle.appendChild(elementSpan3);
-elementSpan3.className = "prix";
-elementSpan3.innerHTML=Stock[i].price;
-
-var elementSpan4 = document.createElement("span");
-elementArticle.appendChild(elementSpan4);
-elementSpan4.innerHTML=Stock[i].euros;
-}
+  for (var i = 0; i < Stock.length; i++) {
+    if (i == 0 || i == Stock.length/2 ) {
+      elementStDiv = document.createElement("div");
+      elementStDiv.className = "col-md-5 col-md-offset-1";
+      elementCatalogue.appendChild(elementStDiv);
+    }
+    creerUnArticle(elementStDiv, i)
+  }
 }
